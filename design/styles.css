@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@200&family=Roboto+Condensed:wght@300;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap');
 /*FOR REFERENCE*/
 
 /*font-family: 'League Gothic', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;*/
 
-
+:root {
+	--topAndBot: calc(calc(100vh - var(--form)) / 2);
+	--form: 250px;
+}
 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -61,6 +63,10 @@ table {
 
 
 
+.whole-container {
+ display: flex;
+}
+
 
 /*Start of design*/
 .pic-container {
@@ -98,4 +104,33 @@ img.logo-pic {
 	margin-top: auto;
 	margin-bottom: auto;
 }
+
+.header-section,
+.form-section,
+.confirm-section {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1.1rem;
+}
+
+.header-section em {
+	font-style: italic;
+}
+
+.form-section {
+	height: var(--form);
+	background-color: #ffffff;
+}
+
+.form-section > div {
+	height: 95%;
+	box-shadow: 0 8px 2px -2px #cfcece;
+	font-family: 'Roboto Condensed', sans-serif
+}
+
+.header-section,
+.confirm-section {
+	height: var(--topAndBot);
+	background-color: #f9fafb;
+}
+
 
