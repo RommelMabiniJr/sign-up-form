@@ -8,19 +8,48 @@
     <link rel="stylesheet" href="design/styles.css">
 </head>
 <body>
-    <div class="pic-container">
-        <img class="bg" src="pictures/cabin-house.jpg" alt="a picture of cabin with a background of stars">
-        <div class="logo-section">
-            <img class="logo-pic" src="pictures/house-svgrepo-com.svg" alt="">
-            <h1>TheCabin</h1>
+    <div class="whole-container">
+        <div class="pic-container">
+            <img class="bg" src="pictures/cabin-house.jpg" alt="a picture of cabin with a background of stars">
+            <div class="logo-section">
+                <img class="logo-pic" src="pictures/house-svgrepo-com.svg" alt="">
+                <h1>TheCabin</h1>
+            </div>
         </div>
-    </div>
-    <div class="content-container">
-        <div class="header-section">
-        </div>
-        <div class="form-section">
-        </div>
-        <div class="confirm-section">
+        <div class="content-container">
+            <div class="header-section">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form-section">
+                <div>
+                    <h2>Let's do this!</h2>
+
+                    <form class="form-box" action="#" method="post">
+                    <label for="firstname">FIRST NAME</label>
+                    <input id="firstname" type="text" name="first_name">
+
+                    <label for="lastname">LAST NAME</label>
+                    <input id="lastname" type="text" name="last_name" >
+
+                    <label for="email">EMAIL</label>
+                    <input id="email" type="email" name="email" >
+
+                    <label for="phone">PHONE</label>
+                    <input id="phone" type="tel" name="phone" >
+
+                    <label for="password">PASSWORD</label>
+                    <input id="password" type="password" name="password" >
+
+                    <label for="confirm-pass">CONFIRM PASSWORD</label>
+                    <input id="confirm-pass" type="password" name="confirm_password" >
+                </form>
+                </div>
+            </div>
+            <div class="confirm-section">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
 </body>
