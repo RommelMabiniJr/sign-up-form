@@ -26,30 +26,46 @@
                     <h2>Let's do this!</h2>
 
                     <form class="form-box" action="#" method="post">
-                    <label for="firstname">FIRST NAME</label>
-                    <input id="firstname" type="text" name="first_name">
+                        <fieldset class="input-fields">
+                            <div>
+                                <label for="firstname">FIRST NAME</label>
+                                <input id="firstname" type="text" name="first_name">
+                            </div>
+    
+                            <div>
+                                <label for="lastname">LAST NAME</label>
+                                <input id="lastname" type="text" name="last_name" >
+                            </div>
+                                
+                            <div>
+                                <label for="email">EMAIL</label>
+                                <input id="email" type="email" name="email" >
+                            </div>
+    
+                            <div>
+                                <label for="phone">PHONE</label>
+                                <input id="phone" type="tel" name="phone" >
+                            </div>
+    
+                            <div>
+                                <label for="password">PASSWORD</label>
+                                <input id="password" type="password" name="password" >
+                            </div>
+    
+                            <div>
+                                <label for="confirm-pass">CONFIRM PASSWORD</label>
+                                <input id="confirm-pass" type="password" name="confirm_password" >
+                            </div>
+                        </fieldset>
 
-                    <label for="lastname">LAST NAME</label>
-                    <input id="lastname" type="text" name="last_name" >
-
-                    <label for="email">EMAIL</label>
-                    <input id="email" type="email" name="email" >
-
-                    <label for="phone">PHONE</label>
-                    <input id="phone" type="tel" name="phone" >
-
-                    <label for="password">PASSWORD</label>
-                    <input id="password" type="password" name="password" >
-
-                    <label for="confirm-pass">CONFIRM PASSWORD</label>
-                    <input id="confirm-pass" type="password" name="confirm_password" >
+                        <div class="confirm-area">
+                            <button type="submit">Create Account</button>
+                            <p>Already have an account? <a href="#">Log in</a></p>
+                        </div>
                 </form>
                 </div>
             </div>
-            <div class="confirm-section">
-                <button>Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
-            </div>
+           
         </div>
     </div>
 </body>

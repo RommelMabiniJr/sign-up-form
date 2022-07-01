@@ -6,8 +6,8 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;*/
 
 :root {
-	--topAndBot: calc(calc(100vh - var(--form)) / 2);
-	--form: 250px;
+	--top: calc(calc(100vh - var(--form-input)) / 2);
+	--form-input: 250px;
 }
 
 
@@ -74,6 +74,10 @@ table {
 	width: 33vw;
 }
 
+.content-container {
+	background-color: #f9fafb;
+}
+
 img.bg {
 	position: absolute;
 	height: 100vh;
@@ -106,8 +110,7 @@ img.logo-pic {
 }
 
 .header-section,
-.form-section,
-.confirm-section {
+.form-section {
 	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 1.1rem;
 }
@@ -116,7 +119,23 @@ img.logo-pic {
 	font-style: italic;
 }
 
+.header-section {
+	height: var(--top);
+}
+
 .form-section {
+	/*Assign the rest of the viewport height*/
+	height: calc( 100vh - var(--top));
+}
+
+.input-fields {
+	height: var(--form-input);
+	box-shadow: 0 8px 2px -2px #cfcece;
+	background-color: white;
+}
+
+/*
+fieldset {
 	height: var(--form);
 	background-color: #ffffff;
 }
@@ -129,8 +148,9 @@ img.logo-pic {
 
 .header-section,
 .confirm-section {
-	height: var(--topAndBot);
 	background-color: #f9fafb;
-}
+}*/
+
+
 
 
