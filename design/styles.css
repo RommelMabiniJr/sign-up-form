@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,400;1,400&display=swap');
 /*FOR REFERENCE*/
-
 /*font-family: 'League Gothic', sans-serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;*/
@@ -62,6 +61,17 @@ table {
 
 
 
+/*avoid default appearance, inherit font-family and font size*/
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+}
+
+input, button {
+	-webkit-appearance: none;
+  	appearance: none;
+}
+
 
 .whole-container {
  display: flex;
@@ -76,6 +86,7 @@ table {
 
 .content-container {
 	background-color: #f9fafb;
+	width: calc(100vw - 33vw);
 }
 
 img.bg {
@@ -124,7 +135,7 @@ img.logo-pic {
 }
 
 .form-section {
-	/*Assign the rest of the viewport height*/
+	/*calculate and assign the rest of the viewport height*/
 	height: calc( 100vh - var(--top));
 }
 
@@ -134,23 +145,22 @@ img.logo-pic {
 	background-color: white;
 }
 
-/*
 fieldset {
-	height: var(--form);
-	background-color: #ffffff;
+	padding: 40px;
+}
+fieldset > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: min(500px, 100%);
 }
 
-.form-section > div {
-	height: 95%;
-	box-shadow: 0 8px 2px -2px #cfcece;
-	font-family: 'Roboto Condensed', sans-serif
+fieldset > div > div {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	margin-bottom: 30px;
 }
-
-.header-section,
-.confirm-section {
-	background-color: #f9fafb;
-}*/
-
 
 
 
