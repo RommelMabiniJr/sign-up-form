@@ -216,7 +216,7 @@ input:focus:valid {
 	border: 2px solid #f11a3e;
 }
 
-.error-message::before {
+.error-message-activate:before {
 	color: #f11a3e;
 	content: '* Passwords do not match';
 	position: absolute;
