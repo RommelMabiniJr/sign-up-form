@@ -5,8 +5,6 @@ const confirmBtn = document.querySelector('button[type="submit"]');
 let pass1 = pass_inputs[0];
 let pass2 = pass_inputs[1];
 
-let isValidated = false
-
 
 pass_inputs.forEach(passInput => {
     passInput.addEventListener("keyup", validatePass)
@@ -17,7 +15,6 @@ pass_inputs.forEach(passInput => {
 function validatePass() {
     
     let result = comparePassInputs(pass1, pass2);
-    console.log(result)
 
     if (result) {
 
