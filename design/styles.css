@@ -74,7 +74,7 @@ input, button {
 
 
 .whole-container {
- display: flex;
+ 	display: flex;
 }
 
 
@@ -145,7 +145,7 @@ img.logo-pic {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	height: var(--top);
+	padding-top: 40px;
 }
 
 .confirm-area {
@@ -256,4 +256,83 @@ a {
 
 a:hover, a:visited {
 	color: #498aa8;
+}
+
+@media only screen and (max-width: 795px) {
+	.whole-container {
+		display: table;
+	}
+
+	.pic-container {
+		width: max(33vw, 500px);
+	}
+
+	.content-container,
+	.pic-container {
+		display: table-cell;
+	}
+
+	.input-fields {
+		height: 100%;
+	}
+
+	fieldset > div > div:nth-child(5) {
+		margin-bottom: 20px;
+	}
+
+	.pic-container {
+		height: auto;
+	}
+
+	img.bg {
+		height: 100%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	
+	.whole-container {
+		display: flex;
+		flex-direction: column;
+		width: max(100vw, 290px);
+	}
+
+	.pic-container {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.input-fields {
+		height: 100%;
+	}
+
+	.content-container {
+		width: 100vw;
+	}
+
+	.header-section {
+		height: min();
+	}
+
+	fieldset > div {
+		flex-direction: column;
+		align-items: center;
+		margin: auto;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	.confirm-area {
+		text-align: center;
+	}
+
+	fieldset > div > div:nth-child(5) {
+		margin-bottom: 20px;
+	}
+
+	input {
+		width: 60vw;
+	}
 }
