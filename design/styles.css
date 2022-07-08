@@ -82,12 +82,31 @@ input, button {
 .pic-container {
 	position: relative;
 	width: max(33vw, 300px);
+	background: url(../pictures/creepy-cabin.jpg);
+	background-size: cover;
+	background-position-x: -150px;
+}
+
+.pic-container > p {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: 10px;
+}
+
+.credit {
+	color: white;
 }
 
 .content-container {
 	background-color: #f9fafb;
 	width: calc(100vw - 33vw);
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 img.bg {
@@ -98,8 +117,8 @@ img.bg {
 }
 
 img.logo-pic {
-	height: 90px;
-	width: 90px;
+	height: clamp(1.5rem, 5vw, 90px) ;
+	width: clamp(1.5rem, 5vw, 90px);
 }
 
 .logo-section {
@@ -207,7 +226,7 @@ input {
 
 input:focus:valid {
 	outline: none !important;
-	border: 2px solid #60cff8;
+	border: 2px solid #d9c6bf;
 	box-shadow: 2px 2px 5px #cacaca;
 }
 
@@ -232,7 +251,7 @@ input:focus:valid {
 
 button[type="submit"] {
 	color: #e9e9e9;
-	background-color: #234453;
+	background-color: #5d503d;
 	padding: 12px;
 	width: 200px;
 	border-radius: 5px;
@@ -245,17 +264,17 @@ button[type="submit"] {
 }
 
 button:hover {
-	background-color: #60cff8;
-	color: #234453;
+	background-color: #1d1a11;
+	color: #f3d9b0;
 }
 
 a {
 	text-decoration: none;
-	color: #234453;
+	color: #423927;
 }
 
 a:hover, a:visited {
-	color: #498aa8;
+	color: #d9c6bf;
 }
 
 @media only screen and (max-width: 795px) {
@@ -299,7 +318,12 @@ a:hover, a:visited {
 
 	.pic-container {
 		width: 100vw;
-		height: 100vh;
+		height: 30vh;
+		background-position-x: center;
+	}
+
+	.logo-section {
+		top: 40px;
 	}
 
 	.input-fields {
